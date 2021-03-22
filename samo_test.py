@@ -19,7 +19,7 @@ from savetomssql import save_reservation, save_payment, save_payments
 application = Flask(__name__)
 
 class MyConfig(object):
-    RESTPLUS_JSON = {'cls': application.json_encoder, 'ensure_ascii' : False}
+    RESTX_JSON = {'cls': application.json_encoder, 'ensure_ascii' : False}
 
 #use Flask JSON encoder instead of standard python to convert dates and decimals
 application.config.from_object(MyConfig)
