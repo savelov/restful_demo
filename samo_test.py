@@ -2,7 +2,7 @@ import sys
 import os
 import socket
 from flask import Flask
-from flask_restplus import Api, Resource, fields
+from flask_restx import Api, Resource, fields
 from threading import Lock
 from tenacity import *
 import json
